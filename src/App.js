@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import {Fragment} from "react";
 import './App.css';
+import 'rsuite/styles/index.less';
+import 'rsuite/dist/rsuite.min.css';
+import Tickets from "./components/Tickets";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Fragment>
+      <header className="App App-header">
+        Ticket Master
       </header>
-    </div>
+        <Tickets/>
+    </Fragment>
   );
 }
 
