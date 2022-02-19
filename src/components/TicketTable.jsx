@@ -31,7 +31,14 @@ const TicketTable = ({data, sendToWidget, title}) => {
                     }}
                 </Cell>
             </Column>
-
+            <Column flexGrow={1}>
+                <HeaderCell>TOTAL AMOUNT</HeaderCell>
+                <Cell>
+                    {(rowData, rowIndex) => {
+                        return <span>{rowData.TOTAL}</span>
+                    }}
+                </Cell>
+            </Column>
             <Column flexGrow={1}>
                 <HeaderCell>TIME</HeaderCell>
                 <Cell>
