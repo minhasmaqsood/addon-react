@@ -13,7 +13,6 @@ const TicketTable = ({data, sendToWidget, title}) => {
                     }}
                 </Cell>
             </Column>
-
             <Column flexGrow={1}>
                 <HeaderCell>ROW</HeaderCell>
                 <Cell>
@@ -22,7 +21,6 @@ const TicketTable = ({data, sendToWidget, title}) => {
                     }}
                 </Cell>
             </Column>
-
             <Column width={100} flexGrow={1}>
                 <HeaderCell>SEAT</HeaderCell>
                 <Cell>
