@@ -1,8 +1,9 @@
 import React, {Fragment} from 'react';
 import {Button, Table} from "rsuite";
+import Timer from "./Timer";
+import App from "./Timer";
 const {Column, Cell, HeaderCell} = Table;
 const TicketTable = ({data, sendToWidget, title}) => {
-
     return (
         <Table  bordered cellBordered rowHeight={45} height={data.length> 3 ? 500 : 200}  data={data} loading={false}>
             <Column flexGrow={1}>
@@ -41,7 +42,10 @@ const TicketTable = ({data, sendToWidget, title}) => {
                 <HeaderCell>TIME</HeaderCell>
                 <Cell>
                     {(rowData, rowIndex) => {
-                        return <span>{rowData.TIME}</span>
+                        return <span>
+                            {/*<Timer TIME={rowData.TIME}/>*/}
+                            <App TIME={rowData.TIME}/>
+                        </span>
                     }}
                 </Cell>
             </Column>
